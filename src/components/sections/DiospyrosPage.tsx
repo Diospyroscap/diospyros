@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 import {
   assets,
-  enduringMaterial,
+  founders,
   footer,
   hero,
   investmentApproach,
@@ -76,13 +76,10 @@ function Hero() {
             <ReferenceLines lines={hero.heading} />
           </h1>
         </Reveal>
-        <Reveal className="hero__copy body-copy" index={2}>
-          {hero.paragraphs.map((paragraph) => (
-            <p key={paragraph[0]}>
-              <ReferenceLines lines={paragraph} />
-            </p>
-          ))}
-        </Reveal>
+        <div className="hero__copy body-copy">
+          <p><ReferenceLines lines={hero.paragraphs[0]} /></p>
+          <p><ReferenceLines lines={hero.paragraphs[1]} /></p>
+        </div>
       </div>
     </section>
   );
@@ -105,6 +102,17 @@ function OriginOfCapital() {
             </p>
           ))}
         </Reveal>
+        <Reveal className="origin__interests body-copy" index={2}>
+          <h3 className="body-heading">{originOfCapital.interestsHeading}</h3>
+          <p>{originOfCapital.interestsIntro}</p>
+          <div className="origin__interest-columns">
+            {originOfCapital.investmentColumns.map((column) => (
+              <ul key={column[0]}>
+                {column.map((interest) => <li key={interest}>{interest}</li>)}
+              </ul>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -121,19 +129,20 @@ function InvestmentApproach() {
             <h2 id="investment-heading" className="body-heading">
               {investmentApproach.heading}
             </h2>
-            <p>
-              <ReferenceLines lines={investmentApproach.intro} />
-            </p>
-            {investmentApproach.traits.map((trait) => (
-              <article className="approach-trait" key={trait.title}>
-                <h3 className="body-heading">{trait.title}</h3>
-                {trait.paragraphs.map((paragraph) => (
-                  <p key={paragraph[0]}>
-                    <ReferenceLines lines={paragraph} />
-                  </p>
+            <div className="investment__stage">
+              {investmentApproach.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <div className="investment__support">
+              <h3 className="body-heading">{investmentApproach.supportHeading}</h3>
+              <p>{investmentApproach.supportIntro}</p>
+              <ul>
+                {investmentApproach.supportPoints.map((point) => (
+                  <li key={point}>{point}</li>
                 ))}
-              </article>
-            ))}
+              </ul>
+            </div>
           </div>
         </Reveal>
       </div>
@@ -141,22 +150,33 @@ function InvestmentApproach() {
   );
 }
 
-function EnduringMaterial() {
+function Founders() {
   return (
     <section className="material section-dark" aria-labelledby="material-heading">
       <SectionBackground src={assets.materialEbony} className="material__background" />
       <div className="layout-container material__layout">
         <Reveal className="material__title">
           <h2 id="material-heading" className="kicker">
-            <ReferenceLines lines={enduringMaterial.kicker} />
+            {founders.kicker}
           </h2>
         </Reveal>
         <Reveal className="material__copy body-copy" index={1}>
-          {enduringMaterial.paragraphs.map((paragraph) => (
-            <p key={paragraph[0]}>
-              <ReferenceLines lines={paragraph} />
-            </p>
-          ))}
+          <h3 className="body-heading">{founders.heading}</h3>
+          <div className="material__criteria">
+            {founders.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </div>
+          <div className="material__for-founders">
+            <h3 className="body-heading">{founders.forFoundersHeading}</h3>
+            <p>{founders.forFoundersParagraph}</p>
+            <div className="material__objective">
+              <p className="body-heading">{founders.objectiveIntro}</p>
+              <p className="body-heading">{founders.objective}</p>
+            </div>
+          </div>
+        </Reveal>
+        <Reveal className="material__closing body-copy" index={2}>
+          <p className="body-heading">{founders.company}</p>
+          <p className="body-heading">{founders.tagline}</p>
         </Reveal>
       </div>
     </section>
@@ -243,7 +263,7 @@ export function DiospyrosPage() {
       <Hero />
       <OriginOfCapital />
       <InvestmentApproach />
-      <EnduringMaterial />
+      <Founders />
       <OurName />
       <Footer />
     </main>

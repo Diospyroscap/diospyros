@@ -9,133 +9,100 @@ export const assets = {
 };
 
 export const hero = {
-  heading: ["Enduring capital.", "Earned over time."],
+  heading: ["Investing in the", "Physical Future"],
   paragraphs: [
-    ["Direct investments in private companies, public", "companies, and real assets."],
     [
-      "Built on more than four decades of creating value for",
-      "some of the world’s most discerning clients.",
+      "Diospyros Capital invests at the pre-seed and seed stages in exceptional founders building the physical capabilities of the United States.",
+    ],
+    [
+      "We focus on advanced manufacturing, defense technology, robotics, materials, aerospace, industrial systems, AI & machine intelligence, and other critical technologies that move beyond software and into the physical world.",
     ],
   ],
 };
 
 export const originOfCapital = {
-  kicker: "Origin of Capital",
-  heading: "Built from craft",
+  kicker: "Viewpoint",
+  heading: "Our Perspective",
   paragraphs: [
     [
-      "Diospyros Capital was formed to invest capital",
-      "earned through more than four decades of building",
-      "an enterprise defined by design, engineering,",
-      "craftsmanship, and exacting standards.",
+      "Diospyros Capital invests capital earned through more than four decades of building a best-in-sector global custom manufacturing company, defined by inspired design, precision engineering, rare materials, and virtuoso craftsmanship.",
     ],
     [
-      "Value was created by hand—through the combination",
-      "of inspired design, precision engineering, rare",
-      "materials, and virtuoso craftsmanship.",
+      "We are intimate with the nuances of the journey from start-up through acquisition, and we bring an operator’s perspective to investing—grounded in patience, precision, judgment, and an uncompromising standard of quality.",
     ],
     [
-      "That background, grounded in patience, precision,",
-      "judgment, and an uncompromising standard of",
-      "quality, shapes how we evaluate opportunities and",
-      "deploy capital today.",
+      "We believe many of the next generation’s most important companies will emerge at the intersection of technology and the physical world.",
+    ],
+  ],
+  interestsHeading: "What We Invest In",
+  interestsIntro: "Our areas of interest include:",
+  investmentColumns: [
+    [
+      "Advanced manufacturing",
+      "Robotics and autonomous systems",
+      "Defense and dual-use technology",
+      "Aerospace",
+      "Advanced materials",
+      "Agile Semiconductor Fabrication",
+      "Photonics and directed energy",
+      "AI & Machine Intelligence",
+      "Industrial automation",
+    ],
+    [
+      "Energy systems",
+      "Precision manufacturing",
+      "Critical supply-chain technologies",
+      "Factory software and industrial intelligence",
+      "Technologies that improve the speed, cost, quality, or resilience of physical production",
     ],
   ],
 };
 
 export const investmentApproach = {
-  kicker: "Investment Approach",
-  heading: "Patient. Selective. Aligned.",
-  intro: [
-    "We invest with a long‑term orientation and a highly",
-    "selective approach.",
+  kicker: "Focus",
+  heading: "Stage",
+  paragraphs: [
+    "We primarily invest at the pre-seed, seed and Series A stages, when our capital, operating experience, and relationships can have the greatest impact.",
+    "Typical initial investments range from $50,000 to $500,000, with additional capital available as exceptional companies grow.",
+    "We invest directly, alongside institutional venture firms, or as part of smaller rounds.",
+    "Diospyros invests family capital, allowing us to make decisions quickly, think long term, and support exceptional companies as they grow.",
   ],
-  traits: [
-    {
-      title: "Independent",
-      paragraphs: [
-        [
-          "We are not a traditional fund. We invest our own",
-          "capital and make decisions independently.",
-        ],
-        [
-          "Every opportunity is evaluated against disciplined criteria",
-          "informed by decades of experience building and operating",
-          "a business. We invest when we believe the opportunity, the",
-          "people, and the terms justify our commitment.",
-        ],
-      ],
-    },
-    {
-      title: "Focused",
-      paragraphs: [
-        [
-          "We are drawn to strong founders and operators,",
-          "clear paths to value creation, alignment among",
-          "stakeholders, long‑term durability, and real‑world",
-          "substance beneath the story.",
-        ],
-      ],
-    },
-    {
-      title: "Flexible",
-      paragraphs: [
-        [
-          "Diospyros Capital may invest across private companies,",
-          "seed and early‑stage opportunities, growth companies,",
-          "select pre‑IPO investments, operating businesses, publicly",
-          "traded companies, and real assets.",
-        ],
-      ],
-    },
+  supportHeading: "More Than Capital",
+  supportIntro: "Diospyros brings an operator’s perspective developed through more than four decades of building complex physical products in the United States.",
+  supportPoints: [
+    "We understand the path from prototype to production—engineering, materials, tooling, skilled labor, quality, supply chains, and scale.",
+    "We seek to be a practical partner to founders building real products in the physical world.",
+    "We draw on four decades of contacts to assist our founders in any way possible.",
   ],
 };
 
-export const enduringMaterial = {
-  kicker: ["From Enduring Material", "to Enduring Capital"],
+export const founders = {
+  kicker: "Founders",
+  heading: "What We Look For",
   paragraphs: [
-    [
-      "For more than four decades, our founder worked",
-      "with Diospyros celebica and Diospyros ebenum,",
-      "among the world’s most precious hardwoods.",
-    ],
-    [
-      "Working with exceptional material requires",
-      "patience, precision, judgment, and respect for",
-      "intrinsic value. Those same principles now guide",
-      "how we deploy capital.",
-    ],
-    [
-      "Diospyros Capital invests its own capital with",
-      "a long‑term perspective, seeking select",
-      "opportunities where quality, durability, alignment,",
-      "and judgment matter.",
-    ],
+    "We back technically exceptional, deeply committed founders solving difficult problems and challenging established industries.",
+    "We seek technologies capable of dramatically improving cost, speed, performance, manufacturability, or strategic capability.",
   ],
+  forFoundersHeading: "For Founders",
+  forFoundersParagraph: "We are particularly interested in companies approaching an inflection point—from prototype to production, first customers to scale, or emerging technology to real-world deployment.",
+  objectiveIntro: "Our objective is simple:",
+  objective: "Back extraordinary people building important things.",
+  company: "Diospyros Capital",
+  tagline: "Investing in the technologies that strengthen the physical world.",
 };
 
 export const ourName = {
   kicker: "Our Name",
-  heading: "A symbol of growth",
+  heading: "A Symbol of Growth",
   paragraphs: [
     [
-      "Derived from Greek and carried into botanical",
-      "Latin, Diospyros is commonly translated as",
-      "“divine fruit” or “fruit of the gods.”",
+      "Derived from Greek, Diospyros means “divine fruit” or “fruit of the gods.”",
     ],
     [
-      "It is the genus that includes Diospyros ebenum,",
-      "Diospyros celebica, and Diospyros virginiana—",
-      "Gabon ebony, Macassar ebony, and American",
-      "persimmon. These remarkable species connect",
-      "the firm’s name to its origins in fine",
-      "craftsmanship, while the persimmon inspired our logo.",
+      "The genus includes ebony, Macassar ebony, and American persimmon—remarkable species that connect our name to our origins in fine craftsmanship. The persimmon inspired our logo.",
     ],
     [
-      "For Diospyros Capital, the name represents both",
-      "origin and philosophy: disciplined selection,",
-      "enduring quality, natural growth, and the patience",
-      "required for value to mature.",
+      "For Diospyros Capital, the name embodies disciplined selection, enduring quality, natural growth, and the patience required for value to mature.",
     ],
   ],
 };

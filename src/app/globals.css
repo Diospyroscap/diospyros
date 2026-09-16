@@ -253,12 +253,16 @@ html.js .reveal.footer__brand > * {
 
 .hero__copy {
   width: min(100%, 35rem);
+  transform: translate(0.5rem, -1rem);
   margin-top: auto;
   padding-top: 4rem;
   padding-bottom: 1rem;
 }
 
-.hero__copy p + p,
+.hero__copy p + p {
+  margin-top: 3rem;
+}
+
 .origin__copy p + p,
 .material__copy p + p,
 .our-name__body p + p {
@@ -279,10 +283,46 @@ html.js .reveal.footer__brand > * {
 
 .origin__title .display-heading {
   margin-top: 1.25rem;
+  white-space: nowrap;
 }
 
 .origin__copy {
   margin-top: 3.5rem;
+}
+
+.origin__interests {
+  margin-top: 4rem;
+}
+
+.origin__interests > p {
+  margin-top: 0.75rem;
+}
+
+.origin__interest-columns {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.origin__interest-columns ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.origin__interest-columns li {
+  padding-left: 0.25em;
+  line-height: 1.4;
+}
+
+.origin__interest-columns li + li {
+  margin-top: 0.75em;
+}
+
+@media (min-width: 48rem) {
+  .origin__interest-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+  }
 }
 
 .investment {
@@ -302,9 +342,34 @@ html.js .reveal.footer__brand > * {
   margin-top: 2rem;
 }
 
-.approach-trait,
-.approach-trait p + p {
+.investment__stage {
+  margin-top: 0.75rem;
+}
+
+.investment__stage p + p {
   margin-top: 1.2em;
+}
+
+.investment__support {
+  margin-top: 3rem;
+}
+
+.investment__support > p {
+  margin-top: 0.75rem;
+}
+
+.investment__support ul {
+  margin: 1.2em 0 0;
+  padding-left: 1.2em;
+}
+
+.investment__support li {
+  padding-left: 0.25em;
+  line-height: 1.4;
+}
+
+.investment__support li + li {
+  margin-top: 0.75em;
 }
 
 .material__background {
@@ -312,7 +377,29 @@ html.js .reveal.footer__brand > * {
 }
 
 .material__copy {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
+}
+
+.material__criteria,
+.material__for-founders > p {
+  margin-top: 0.75rem;
+}
+
+.material__for-founders {
+  margin-top: 3rem;
+}
+
+.material__objective {
+  margin-top: 3rem;
+}
+
+.material__closing {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.material__closing p + p {
+  margin-top: 0.75em;
 }
 
 .our-name {
@@ -414,24 +501,14 @@ html.js .reveal.footer__brand > * {
   }
 
   .hero {
-    height: 56.25rem;
-    min-height: 0;
+    min-height: 56.25rem;
   }
 
   .hero__layout {
-    display: block;
-    min-height: 0;
-    padding: 0;
+    min-height: 56.25rem;
+    padding-block: 4.0625rem;
   }
 
-  .hero__brand,
-  .hero__heading,
-  .hero__copy,
-  .origin__title,
-  .origin__copy,
-  .investment__content,
-  .material__title,
-  .material__copy,
   .our-name__copy,
   .our-name__mark,
   .footer__heading,
@@ -441,97 +518,63 @@ html.js .reveal.footer__brand > * {
     position: absolute;
   }
 
-  .hero__brand {
-    top: 4.0625rem;
-    left: 0;
-  }
-
   .hero__heading {
-    top: 18.75rem;
-    left: 0;
-    margin: 0;
+    margin-top: 11.25rem;
   }
 
   .hero__copy {
-    top: 42.3125rem;
-    left: 36.5625rem;
-    width: 38.75rem;
-    margin: 0;
-    padding: 0;
+    align-self: flex-end;
+    transform: translate(1.5rem, -2rem);
+    width: 34.6875rem;
+    margin-top: auto;
+    padding-top: 4rem;
+    padding-bottom: 0;
   }
 
-  .hero__copy p + p {
-    margin-top: 1.2em;
-  }
-
-  .origin {
-    height: 42.8125rem;
-  }
-
-  .origin__layout,
-  .investment__layout,
-  .material__layout,
   .our-name__layout,
   .footer__layout {
     padding: 0;
   }
 
-  .origin__title {
-    top: 5.75rem;
-    left: 0;
-    width: 30.9375rem;
+  .origin__layout {
+    padding-block: 5.75rem;
   }
 
   .origin__title .display-heading {
     margin-top: 0.375rem;
   }
 
-  .origin__copy {
-    top: 13.6875rem;
-    left: 36.5625rem;
-    width: 38.75rem;
-    margin: 0;
+  .origin__interest-columns {
+    column-gap: 5.625rem;
   }
 
   .investment {
-    height: 58.6875rem;
+    min-height: 58.6875rem;
   }
 
-  .investment__content {
-    top: 5.5625rem;
-    left: 0;
-    width: 41.625rem;
+  .investment__layout {
+    padding-block: 5.5625rem;
   }
 
   .investment__body {
     margin-top: 1.6875rem;
   }
 
-  .approach-trait,
-  .approach-trait p + p {
-    margin-top: 1.2em;
-  }
-
   .material {
-    height: 36.9375rem;
+    min-height: 36.9375rem;
   }
 
   .material__background {
     height: 71rem !important;
+    min-height: 100%;
     object-position: center center;
   }
 
-  .material__title {
-    top: 6.375rem;
-    left: 0;
-    width: 30.9375rem;
+  .material__layout {
+    padding-block: 6.375rem;
   }
 
   .material__copy {
-    top: 6.625rem;
-    left: 36.5625rem;
-    width: 34.6875rem;
-    margin: 0;
     font-stretch: 112%;
     font-variation-settings: "wdth" 112;
   }
@@ -605,13 +648,10 @@ html.js .reveal.footer__brand > * {
     content: " ";
   }
 
-  .origin__copy,
-  .material__copy,
   .footer__copy {
     max-width: 35rem;
   }
 
-  .investment__content,
   .our-name__copy {
     max-width: 42rem;
   }
@@ -625,6 +665,10 @@ html.js .reveal.footer__brand > * {
 
   .display-heading {
     font-size: clamp(2.55rem, 12.5vw, 3.25rem);
+  }
+
+  .origin__title .display-heading {
+    font-size: clamp(1.5rem, 7.8vw, 2.7rem);
   }
 
   .body-copy {
