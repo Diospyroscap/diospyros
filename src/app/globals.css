@@ -59,30 +59,6 @@ body::before {
   outline-offset: 5px;
 }
 
-.skip-link {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 10000;
-  transform: translateY(-6rem);
-  border-radius: 0.125rem;
-  background: #ffffff;
-  color: #000000;
-  padding: 0.75rem 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
-  transition: transform 220ms var(--ease-interface);
-}
-
-.skip-link:focus-visible {
-  transform: translateY(0);
-}
-
-main:focus {
-  outline: none;
-}
-
 section,
 footer {
   position: relative;
@@ -740,8 +716,7 @@ html.js .reveal.footer__brand > * {
     transition-delay: 0ms !important;
   }
 
-  .footer__email,
-  .skip-link {
+  .footer__email {
     transition: none;
   }
 }

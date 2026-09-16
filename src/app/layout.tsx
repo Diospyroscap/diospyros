@@ -62,9 +62,6 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <script dangerouslySetInnerHTML={{ __html: enableJsScript }} />
       </head>
       <body>
-        <a className="skip-link" href="#main-content">
-          Skip to content
-        </a>
         <SmoothScroll />
         {children}
       </body>

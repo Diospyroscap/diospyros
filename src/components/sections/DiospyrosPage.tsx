@@ -259,7 +259,7 @@ function Footer() {
 
 export function DiospyrosPage() {
   return (
-    <main id="main-content" tabIndex={-1}>
+    <main id="main-content">
       <Hero />
       <OriginOfCapital />
       <InvestmentApproach />
